@@ -1,0 +1,61 @@
+{
+  "kind": "collectionType",
+  "collectionName": "products",
+  "info": {
+    "singularName": "product",
+    "pluralName": "products",
+    "displayName": "product",
+    "description": ""
+  },
+  "options": {
+    "draftAndPublish": true
+  },
+  "pluginOptions": {},
+  "attributes": {
+    "NombreProducto": {
+      "type": "string"
+    },
+    "slug": {
+      "type": "uid"
+    },
+    "descripcion": {
+      "type": "text"
+    },
+    "imagenes": {
+      "type": "media",
+      "multiple": true,
+      "required": false,
+      "allowedTypes": [
+        "images",
+        "files",
+        "videos",
+        "audios"
+      ]
+    },
+    "activo": {
+      "type": "boolean",
+      "default": true
+    },
+    "precio": {
+      "type": "decimal"
+    },
+    "isFeature": {
+      "type": "boolean"
+    },
+    "categoria": {
+      "type": "relation",
+      "relation": "oneToOne",
+      "target": "api::categoria.categoria"
+    },
+    "Marca": {
+      "type": "enumeration",
+      "enum": [
+        "Asus",
+        "Samsung",
+        "Logitech",
+        "JBL"
+      ],
+      "default": "Samsung"
+    }
+  }
+}
