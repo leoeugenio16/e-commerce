@@ -16,7 +16,7 @@ const ChooseCategory = () => {
                 result.map((category: CategoryType) => (
                     <Link
                     key={category.id}
-                    href={`/categorias/${category.slug}`}
+                    href={`/category/${category.slug}`}
                     className='relative max-w-xs mx-auto overflow-hidden bg-no-repeat bg-cover rounded-lg'
                     >
                         <img 

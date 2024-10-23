@@ -702,7 +702,7 @@ export interface ApiProductProduct extends Struct.CollectionTypeSchema {
   };
   attributes: {
     NombreProducto: Schema.Attribute.String;
-    slug: Schema.Attribute.UID;
+    slug: Schema.Attribute.UID<'NombreProducto'>;
     descripcion: Schema.Attribute.Text;
     imagenes: Schema.Attribute.Media<
       'images' | 'files' | 'videos' | 'audios',
