@@ -28,6 +28,11 @@ El archivo BAT realizará las siguientes acciones:
 * Construirá el proyecto Strapi.
 * Iniciará Strapi.
 
+### Descarcar el sigueinte archivo rar que contiene las imagenes y descompirmir en 
+
+e-commerce_PCHub/public/uploads
+estas son todas las imagenes del proyecto
+
 
 ### #5. Iniciar sesión en Strapi
 Dirigirse a http://localhost:1337/admin en el navegador.

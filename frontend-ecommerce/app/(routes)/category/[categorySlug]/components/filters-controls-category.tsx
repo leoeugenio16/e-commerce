@@ -1,9 +1,13 @@
 import FilterMarca from "./filter-marca";
 
-const FilterControlsCategory = () =>{
+type filtersControlsMarcaProps = {
+    setFilterMarca : (marca:string) => void
+}
+const FilterControlsCategory = (props: filtersControlsMarcaProps) =>{
+    const {setFilterMarca} = props
     return(
         <div className="sm:w[350px] sm:mt-5">
-            <FilterMarca></FilterMarca>
+            <FilterMarca setFilterMarca={setFilterMarca}></FilterMarca>
         </div>
     )
 }
