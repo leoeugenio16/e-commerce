@@ -27,39 +27,6 @@ if %errorlevel% neq 0 (
     exit /b 1
 )
 echo Restauracion de backup finalizada.
-:: Instalar gdown
-npm install -g gdown
-if %errorlevel% neq 0 (
-    echo Error al instalar gdown
-    pause
-    exit /b 1
-)
-echo Instalacion de gdown finalizada.
-
-:: Descargar imágenes desde Google Drive
-gdown --id 1-XX0na9dc10OgRtuRKIT8BQ1421UJ4xw --output public/uploads/imagenes.zip
-if %errorlevel% neq 0 (
-    echo Error al descargar imágenes
-    pause
-    exit /b 1
-) else if not exist public/uploads/imagenes.zip (
-    echo Error: Archivo de imágenes no descargado
-    pause
-    exit /b 1
-)
-echo Descarga de imágenes finalizada.
-
-:: Descomprimir imágenes
-powershell -Command "Expand-Archive -Path 'public/uploads/imagenes.zip' -DestinationPath 'public/uploads' -Force"
-if %errorlevel% neq 0 (
-    echo Error al descomprimir imágenes
-    pause
-    exit /b 1
-)
-echo Descompresion de imágenes finalizada.
-
-:: Eliminar archivo zip
-del public/uploads/imagenes.zip
 
 :: Instalar dependencias de Strapi
 npm install --force
