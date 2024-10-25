@@ -6,7 +6,7 @@ echo Creacion de base de datos finalizada.
 
 
 :: Descargar backup de base de datos desde Google Drive
-curl -L -v -o db_backup.sql https://drive.google.com/uc?id=162-FQeIojn5B-m9ZeMpTNPxkv_lAkA9M
+curl -L -v -o db_backup.sql https://drive.google.com/uc?id=1lI1ZHsVU6-mKspYwTd-IMZGI-M2ihDDq
 if %errorlevel% neq 0 (
     echo Error al descargar backup de base de datos
     pause
