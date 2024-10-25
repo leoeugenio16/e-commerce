@@ -8,7 +8,7 @@ export function useGetProductBySlug(slug: string | string[]) {
     const [loading,setLoading]=useState(true)
     const [error,setError]= useState('')
 
-    useEffectt(()=>{
+    useEffect(()=>{
         (async () =>{
             try {
                 const res = await fetch(url)
@@ -23,7 +23,5 @@ export function useGetProductBySlug(slug: string | string[]) {
     },[url])
 
     return {loading,result,error}
-    return(
-        
-    )
+    
 }
