@@ -13,9 +13,8 @@
 
 ### #1. Clonar el repositorio
 git clone <url-del-repositorio>
-### #2. Instalar dependencias
-npm install
-### #3. Ejecutar archivo BAT
+
+### #2. Ejecutar archivo BAT
 init.bat
 
 
@@ -36,6 +35,8 @@ https://drive.google.com/file/d/1-myIb-lNmPfz2roUTMKgbJT1p4olQsxe/view?usp=drive
 estas son todas las imagenes del proyecto
 
 ### #5. Iniciar sesión en Strapi
+ir a la terminal y dirigirse hasta la carpeta e-commerce_PCHub y ahi ejecutar npm run develop
+esperar hasta que renderice por completo 
 Dirigirse a http://localhost:1337/admin en el navegador.
 Iniciar sesión con el correo y contraseña configurados.
 
@@ -46,6 +47,8 @@ Verificar que Strapi esté funcionando correctamente.
 
 
 ### #7. Abrir el frontend
+ir a la terminal y dirigirse hasta la carpeta frontend-ecommerce y ahi ejecutar npm run dev
+esperar hasta que renderice por completo 
 Dirigirse a http://localhost:3000 en el navegador para acceder al frontend.
 
 
